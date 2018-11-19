@@ -62,7 +62,7 @@ function getHeight(startingHeight1, startingHeight2){
 //Currency Exchange
 
 
-
+/*
 
 let ExRate = {};
 
@@ -123,4 +123,4 @@ function getCurrency(startingCurrency, chosenCountry){
 //Temp
 
 
-
+*/
