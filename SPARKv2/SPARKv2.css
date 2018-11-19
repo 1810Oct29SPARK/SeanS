@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    /*background-image:
+    */
+    background-color: yellow;
+}
+
+aside {
+    width: 40%;
+    background-color: lightblue;
+    float: right;
+    margin: 30px;
+}
+
+section {
+    background-color: lightblue;
+    margin: 50px;
+    width: 50%;
+}
+
+
+#currency {
+    background-color: lightgreen;
+}
+
+#weatherSection {
+    background-color: orange;
+}
+
+#worldClock {
+    background-color: violet;
+}

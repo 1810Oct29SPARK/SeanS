@@ -1,0 +1,140 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Travel Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="SPARKv2.css" />
+    <!--<script src="SPARKv2.js"></script>-->
+    <script src="SPARKv3.js"></script>
+
+</head>
+<body>
+    <header></header>
+    <!--For this nav bar, it would be good to have links for the different sections on the page-->
+    <nav></nav>
+        <h1>Travel Buddy</h1>
+        <aside>
+                <h2>Curiosity Corner</h2>
+                <!--Height-->
+                <form class="Height">
+                    <fieldset>
+                        <input type="number" id="feet" step="1.0"> ft <br> <br>
+                        <input type="number" id="inches" step="1.0"> in <br> <br>
+                        <input type="text" id="DisplayHeight" name="Height in cm"> cm <br>
+                        <button type="button" id="Conv">Get Height</button>
+                    </fieldset>
+                </form>
+                <!--Weight-->
+                <form class="Weight">
+                    <fieldset>
+                        <input type="number" id="pounds" step="1.0"> lbs <br>
+                        <br>
+                        <input type="text" id="DisplayWeight" name="Weight in kg"> kg <br>
+                        <button type="button" id="WeightButton">Get Weight</button>
+                    </fieldset>
+                </form>
+                <!--Speed-->
+                <form class="Speed">
+                    <fieldset>
+                        <input type="number" id="mph" step="1.0"> mph <br>
+                        <br>
+                        <input type="number" id="DisplaySpeed" name="Speed in kph"> kph <br>
+                        <button type="button" id="SpeedButton">Get Speed</button>
+                    </fieldset>
+                </form>
+                <div id="flights">
+                        <a href="https://www.expedia.com/Flights">
+                            <h3>Looking for flights?</h3>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="hotels">
+                        <a href="https://www.booking.com/">
+                            <h3>How about a hotel?</h3>
+                        </a>
+                    </div>
+                </aside>
+        <section>
+        <!--Currency-->
+        <form id="Currency" class="Top Section">
+            <h2>Currency Exchange</h2>
+            <fieldset>
+                <input type="number" id="USD" name="US Dollars" >
+                <input type="radio" name="country" value="JPY">JPY
+                <input type="radio" name="country" value="SGD">SGD
+                <input type="radio" name="country" value="AUD">AUD
+                <input type="radio" name="country" value="GBP">GBP
+                <input type="radio" name="country" value="EUR">EUR
+                <button type="button" id="CashEx"></button>
+                <input type="number" id="NewCurrency">
+               <!-- 
+                <button id="JPY">Japan</button>
+                <button id="SGD">Singapore</button>
+                <button id="AUD">Australia</button>
+                <button id="GBP">United Kingdom</button>
+                <button id="EUR">France</button>
+            -->
+            </fieldset>
+            <fieldset>
+                <legend>Result</legend>
+                <input type="text" id="DisplayResult" name="Result">
+            </fieldset>
+            <button type="button" id="ExCalculate">Calculate</button>
+            <div id="finDiv"></div>
+        </form>
+        </section>
+        <!--Climate, Weather, Temperature-->
+        <section id="weatherSection" class="Top Section">
+            <h3>Local Temperature</h3>
+            <form>
+                <legend>Insert Legend Here</legend>
+                <fieldset>
+                    <input type="text" id="DisplayTemp" name="Temperature">
+                    <button id="Sendai">Sendai</button>
+                    <button id="Tokyo">Japan</button>
+                    <button id="Singapore">Singapore</button>
+                    <button id="Australia">Australia</button>
+                    <button id="England">United Kingdom</button>
+                    <button id="France">France</button>
+                    <br>
+                    <div id="weatherDiv">Weather Updates HERE</div>
+                </fieldset>
+            </form>
+            <form class="Temp">
+                <fieldset>
+                    <legend>Kelvin</legend>
+                    <input type="number" id="Kelvin" step="1.0">
+                    <legend>Celcius</legend>
+                    <input type="text" id="Display Celcius" name="DegreesC">
+                    <legend>Farenheit</legend>
+                    <input type="text" id="Display Farenheit" name="DegreesF">
+                    <button type="button" id="Conv">Get Temp</button>
+                </fieldset>
+            </form>
+        </section>
+        <!--<button id="new-local-temp">Get Temp</button>-->
+        <!--World Clock, Time Zone Conversion-->
+        <section id="worldClock" class="Top Section">
+            <h3>Time Zone</h3>
+            <form>
+                <legend>Check the Time</legend>
+                <fieldset>
+                    <input type="number" id="Local Time" name="Local Time">
+                    <input type="radio" name="ForeignTime">Japan</input>
+                    <input type="radio" name="ForeignTime">Singapore</input>
+                    <input type="radio" name="ForeignTime">Australia</input>
+                    <input type="radio" name="ForeignTime">United Kingdom</input>
+                    <input type="radio" name="ForeignTime">France</input>
+                </fieldset>
+                <fieldset>
+                    <input type="number" id="timeDiv">
+                    <button type="button" id="timeCalc"></button>
+                </fieldset>
+                <div id="timeDiv"></div>
+            </form>
+        </section>
+</body>
+</html>
