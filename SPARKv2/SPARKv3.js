@@ -44,7 +44,7 @@ function getHeight(startingHeight1, startingHeight2){
 
 
 //Time
-
+/*
 window.onload = function(){
     document.getElementById("Conv").addEventListener("click", function(){
         let startingHeight1 = document.getElementById("feet").value;
@@ -57,7 +57,7 @@ function getHeight(startingHeight1, startingHeight2){
     finalHeight = startingHeight1 * 12 + startingHeight2 * 2.54;
     return finalHeight;
 }
-
+*/
 
 //Currency Exchange
 
