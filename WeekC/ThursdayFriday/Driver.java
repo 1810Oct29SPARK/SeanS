@@ -1,7 +1,20 @@
 public class Driver {
 
 	public static void main(String[] args) {
-		
+		//Make some cars
+		Car myCar = new Car(2016, "Elantra", "Hyundai");
+		Car myOtherCar = new Car(2018, "Model S", "Tesla");
+		myCar.setMilesSinceOilChange(100);
+		if (myCar.getMilesSinceOilChange() >= Car.milesBetweenOilChanges) {
+			System.out.println("Time to change the oil");
+		} else {
+			int milesLeft = Car.milesBetweenOilChanges - myCar.getMilesSinceOilChange();
+			System.out.println("You have " + milesLeft + " miles left");
+	}
+
+
+				//init as in initial
+	public static void init() {
 		System.out.println("This is the point of entry into my program");
 		//make a car object with no set fields
 		//declare the variable carOne and assign a new Car to it
@@ -42,6 +55,21 @@ public class Driver {
 		P1.move();
 		P1.ascend();
 		P1.descend();
+
+
+
+		//declared a variable garage which is an arrray of vehicles
+		//created an empty array with 5 elements and assigned it to garage
+		Vehicle[] garage = new Vehicle[5];
+		//add vehicles to array
+		garage[0] = carOne;
+		garage[1] = new Boat("The Black Pearl", "black");
+		garage[2] = new Car(1880, "Horse", "Horse");
+		garage[3] = carTwo;
+		garage[4] = new Boat("Boaty McBoatface", "green");
+		for (int i=0; i < garage.length; i++) {
+			garage[i].move();
+		}
 
 	}
 

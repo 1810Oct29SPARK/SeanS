@@ -15,10 +15,14 @@ public class Car extends Vehicle {
 		this.make = make;
 	}
 
+	//declared a static variable and assigned it a value of 5,000
+	public static int milesBetweenOilChanges = 5000;
+
 	//private instance variables; accessible only within the class
 	private int yearManufactured;
 	private String model;
 	private String make;
+	private int milesSinceOilChange; //this instance variable tracks how many miles since the last oil change
 
 	//getters and setters (accessors and mutators)
 	public int getYearManufactured() {
@@ -33,6 +37,10 @@ public class Car extends Vehicle {
 		return this.make;
 	}
 
+	public int getMilesSinceLastOilChange(){
+		return this.milesSinceOilChange;
+	}
+
 	public void setYearManufactured(int year){
 		this.yearManufactured = year;
 	}
@@ -40,6 +48,11 @@ public class Car extends Vehicle {
 	public void setModel(String model){
 		this.model = model;
 	}
+
+	public void setMilesSinceOilChange(int miles){
+		this.milesSinceOilChange = miles;
+	}
+
 	//model is in METHOD SCOPE
 	//this.model is in INSTANCE SCOPE
 
@@ -52,5 +65,8 @@ public class Car extends Vehicle {
 	public void move(){
 		System.out.println("Car is moving");
 	}
+
+
+
 }
 
