@@ -8,6 +8,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ListTodosComponent } from './components/list-todos/list-todos.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ListTodosComponent } from './components/list-todos/list-todos.component
     WelcomeComponent,
     LoginComponent,
     ErrorComponent,
-    ListTodosComponent
+    ListTodosComponent,
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
