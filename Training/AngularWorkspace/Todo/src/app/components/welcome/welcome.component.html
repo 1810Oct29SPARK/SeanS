@@ -1,13 +1,17 @@
 <h1>Welcome!</h1>
 
-<div class="container">
+<div class="container" *ngIf="errorMessageFromService" style="font-size: 24px">
+    {{errorMessageFromService}}
+</div>
+
+<div class="container" *ngIf="!errorMessageFromService">
     Welcome, {{name | uppercase}}!
     You can manage your To Do List <a routerLink="/todos">HERE</a>
 </div>
 
-<div class="container">
+<div class="container" *ngIf="!errorMessageFromService">
     Click here to get a customized welcome message
-    <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Message</button>
+    <button (click)="getWelcomeMessageWithParameter()" class="btn btn-success">Get Welcome Message</button>
 </div>
 
 <div class="container" *ngIf="welcomeMessageFromService">
