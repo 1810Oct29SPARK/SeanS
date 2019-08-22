@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoDataService } from 'src/app/services/data/todo-data.service';
 
 export class Todo {
 
@@ -18,13 +19,14 @@ export class Todo {
 })
 export class ListTodosComponent implements OnInit {
 
-  todos = [
-    new Todo(1, 'Priesthood Power', false, new Date()),
-    new Todo(2, 'Health & Fitness', false, new Date()),
-    new Todo(3, 'Japanese Fluency', false, new Date()),
-    new Todo(4, 'Financial Stability', false, new Date()),
-    new Todo(5, 'Packed & Ready', false, new Date()),
-  ]
+  todos: Todo[]
+  // [
+  //   new Todo(1, 'Priesthood Power', false, new Date()),
+  //   new Todo(2, 'Health & Fitness', false, new Date()),
+  //   new Todo(3, 'Japanese Fluency', false, new Date()),
+  //   new Todo(4, 'Financial Stability', false, new Date()),
+  //   new Todo(5, 'Packed & Ready', false, new Date()),
+  // ]
 
 
   // todos = [
@@ -39,9 +41,17 @@ export class ListTodosComponent implements OnInit {
   //   description: 'Priesthood Power'
   // }
 
-  constructor() { }
+  constructor(
+    private todoService: TodoDataService
+  ) { }
 
   ngOnInit() {
+    this.todoService.retrieveAllTodos('zexl').subscribe(
+      response => {
+        console.log(response);
+        this.todos = response;
+      }
+    )
   }
 
 }

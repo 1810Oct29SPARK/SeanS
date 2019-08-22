@@ -1,4 +1,4 @@
-package com.udemy.todo;
+package com.udemy.todo.helloworld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

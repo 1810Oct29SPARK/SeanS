@@ -1,4 +1,4 @@
-package com.udemy.todo;
+package com.udemy.todo.helloworld;
 
 public class HelloWorldBean {
 	

@@ -3,13 +3,15 @@
   <table class="table">
     <thead>
       <tr>
+        <th>Number</th>
         <th>Description</th>
         <th>Deadline</th>
-        <th>Completed</th>
+        <th>Done</th>
       </tr>
     </thead>
     <thead>
       <tr *ngFor="let todo of todos">
+        <td> {{todo.id}} </td>
         <td> {{todo.description}} </td>
         <td> {{todo.targetDate | date : pst}} </td>
         <td> {{todo.done}} </td>
